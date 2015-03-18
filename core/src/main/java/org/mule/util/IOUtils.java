@@ -70,7 +70,7 @@ public class IOUtils extends org.apache.commons.io.IOUtils
     public static InputStream getResourceAsStream(final String resourceName,
                                                   final Class callingClass) throws IOException
     {
-        return getResourceAsStream(parseResourceName(resourceName), callingClass, true, true);
+        return getResourceAsStream(resourceName, callingClass, true, true);
     }
 
     /**
